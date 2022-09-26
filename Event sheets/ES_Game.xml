@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES_Game</name>
+    <events>
+        <variable constant="0" name="SpawnTime" sid="969485610326256" static="0" type="number">3</variable>
+        <variable constant="0" name="Speed" sid="240652776894734" static="0" type="number">600</variable>
+        <variable constant="0" name="Spawn" sid="305066939113889" static="0" type="number">0</variable>
+        <event-group description="Movimento" sid="402531173897944" title="Movimento">
+            <sub-events>
+                <event-group description="" sid="231537978704930" title="Esquerda">
+                    <sub-events>
+                        <event-block sid="760956653355857">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="523229540275487" type="Touch">
+                                    <param id="0" name="Object">LeftControler</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="288429339958339" type="Player">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="X co-ordinate">720</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="593561718988200" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="353015140024157" type="Player">
+                                    <param id="0" name="X">245</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="358249963486147">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="203202761634415" type="Touch">
+                                    <param id="0" name="Object">LeftControler</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="504933181105733" type="Player">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="X co-ordinate">1195</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="188319737049656" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="273132211803121" type="Player">
+                                    <param id="0" name="X">720</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="393856994722214" title="Direita">
+                    <sub-events>
+                        <event-block sid="549786878807501">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="653098251181682" type="Touch">
+                                    <param id="0" name="Object">RightControler</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="766526850033864" type="Player">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="X co-ordinate">245</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="678408814962491" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="894555689406929" type="Player">
+                                    <param id="0" name="X">720</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="510226900821194">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="845545695146717" type="Touch">
+                                    <param id="0" name="Object">RightControler</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="882954823178719" type="Player">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="X co-ordinate">720</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="486930462773772" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="359830180109572" type="Player">
+                                    <param id="0" name="X">1195</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="103043946710619" title="Obstaculo">
+            <sub-events>
+                <event-group description="" sid="327654545329028" title="Destroy">
+                    <sub-events>
+                        <event-block sid="594203627225579">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="139423514772896" type="Destroyer">
+                                    <param id="0" name="Object">Object01</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="897643776693103" type="Object01" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="539459842117881">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="296158892491472" type="Destroyer">
+                                    <param id="0" name="Object">Object02</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="816829697510384" type="Object02" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="493711294249687">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="202638710485314" type="Destroyer">
+                                    <param id="0" name="Object">Object03</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="762901720790928" type="Object03" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="905341347556706" title="Spawn">
+                    <sub-events>
+                        <event-block sid="898866305823318">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="982006359997531" type="System">
+                                    <param id="0" name="Interval (seconds)">SpawnTime</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="171041660008776" type="System">
+                                    <param id="0" name="Variable">Spawn</param>
+                                    <param id="1" name="Value">round(random(60))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="605670940225309">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="309910866806578" type="System">
+                                    <param id="0" name="Interval (seconds)">SpawnTime</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="391120631018554">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="752801592918178" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="843315638039365" type="System">
+                                            <param id="0" name="Object to create">Object01</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">470</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="326295015033959">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="481068959527300" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="274480982156468" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="375365690425772" type="System">
+                                            <param id="0" name="Object to create">Object02</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">945</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="906083824545435">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="773924562552515" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">20</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="814571059238328" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">30</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="954989497519430" type="System">
+                                            <param id="0" name="Object to create">Object03</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">1420</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="148611464069856">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="544265871402801" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">30</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="157015216595686" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="860055336454384" type="System">
+                                            <param id="0" name="Object to create">Object01</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">470</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="832848834918175" type="System">
+                                            <param id="0" name="Object to create">Object02</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">945</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="180169041649497">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="483466971116173" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">40</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="175138157149682" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="489687503199231" type="System">
+                                            <param id="0" name="Object to create">Object01</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">470</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="451868722981125" type="System">
+                                            <param id="0" name="Object to create">Object03</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">1420</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="306181261527184">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="597300323995231" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="423615230382676" type="System">
+                                            <param id="0" name="Variable">Spawn</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">60</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="738060728654572" type="System">
+                                            <param id="0" name="Object to create">Object02</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">945</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="538609921475734" type="System">
+                                            <param id="0" name="Object to create">Object03</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">1420</param>
+                                            <param id="3" name="Y">-500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="635828577827413" title="Aceleração">
+                    <sub-events>
+                        <event-block sid="519548322661966">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="869855560611407" type="System">
+                                    <param id="0" name="Interval (seconds)">0.1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="282619080691877" type="Object01">
+                                    <param id="0" name="Speed">Speed</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="299163451309550" type="Object02">
+                                    <param id="0" name="Speed">Speed</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="775623205494510" type="Object03">
+                                    <param id="0" name="Speed">Speed</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="978090942956288">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="860465632706299" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="207812041403952" type="System">
+                                    <param id="0" name="Variable">Speed</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="532901871268147">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="489824049840929" type="System">
+                    <param id="0" name="Interval (seconds)">30</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="150990099930157" type="System">
+                    <param id="0" name="Variable">SpawnTime</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="846981073295558" type="System">
+                    <param id="0" name="Variable">SpawnTime</param>
+                    <param id="1" name="Value">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

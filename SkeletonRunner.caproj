@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>SkeletonRunner</name>
+    <description>Skeleton Game</description>
+    <version>1.0.0.0</version>
+    <author>Dias</author>
+    <author-email>higordiaszuqueto@gmail.com</author-email>
+    <author-website>http://arkabot.comb.r/</author-website>
+    <app-id>com.arka.skeletongame</app-id>
+    <unique-id>3ntrm9902cpxd</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1440</width>
+        <height>2560</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BackGround" sid="275395553965915">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Title" sid="336454502013304">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\1.Programacao\5.Construct\SkeletonRunner_Images\Title.png" />
+        </object-type>
+        <object-type name="StartButton" sid="745539884018781">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\1.Programacao\5.Construct\SkeletonRunner_Images\Start.png" />
+        </object-type>
+        <object-type name="RightControler" sid="919807473840983">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="LeftControler" sid="266815011420644">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Touch" sid="810106889673805">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Object01" sid="568183785678914">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="994417966594131">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Object02" sid="577956592403560">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="836934904206658">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Object03" sid="986739563739553">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="450170650235997">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Destroyer" sid="935940865020198">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647338920478160" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="264683926422603">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240496009681842" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\1.Programacao\5.Construct\SkeletonRunner_Images\Skeleton\1_450.png">
+                        <collision-poly>
+                            <point x="0.602222" y="0.284445" />
+                            <point x="0.602222" y="0.715556" />
+                            <point x="0.355556" y="0.724444" />
+                            <point x="0.36" y="0.282222" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.602222" y="0.284445" />
+                            <point x="0.602222" y="0.715556" />
+                            <point x="0.355556" y="0.724444" />
+                            <point x="0.36" y="0.282222" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\1.Programacao\5.Construct\SkeletonRunner_Images\Skeleton\2_450.png">
+                        <collision-poly>
+                            <point x="0.602222" y="0.284445" />
+                            <point x="0.602222" y="0.715556" />
+                            <point x="0.355556" y="0.724444" />
+                            <point x="0.36" y="0.282222" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\1.Programacao\5.Construct\SkeletonRunner_Images\Skeleton\3_450.png">
+                        <collision-poly>
+                            <point x="0.602222" y="0.284445" />
+                            <point x="0.602222" y="0.715556" />
+                            <point x="0.355556" y="0.724444" />
+                            <point x="0.36" y="0.282222" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Game.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ES_Menu.xml</event-sheet>
+        <event-sheet>ES_Game.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="7">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
