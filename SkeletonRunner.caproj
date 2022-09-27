@@ -10,7 +10,9 @@
     <unique-id>3ntrm9902cpxd</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -141,6 +143,12 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Storage" sid="619127569360858">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="Score" sid="942181919939980">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -157,6 +165,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Storage" uid="12" />
     </global-instances>
     <sounds-folder />
     <music-folder />
@@ -168,6 +177,14 @@
             <file name="icon-128.png" />
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="Font">
+            <file name="boneapa-webfont.eot" />
+            <file name="boneapa-webfont.svg" />
+            <file name="boneapa-webfont.ttf" />
+            <file name="boneapa-webfont.woff" />
+            <file name="boneapa-webfont.woff2" />
+            <file name="stylesheet.css" />
         </file-folder>
     </files-folder>
 </c2project>
