@@ -15,5 +15,167 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="379055005272974">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="779535187010328" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="647259268028883" type="Storage">
+                    <param id="0" name="Key">&quot;Score1&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="362439120244390" type="Storage">
+                    <param id="0" name="Key">&quot;Score2&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="741170309305024" type="Storage">
+                    <param id="0" name="Key">&quot;Score3&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="447156170365656" type="Storage">
+                    <param id="0" name="Key">&quot;Score4&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="600092651480524" type="Storage">
+                    <param id="0" name="Key">&quot;Score5&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="788190127756566">
+            <conditions>
+                <condition id="9" name="On item exists" sid="539839676941152" type="Storage">
+                    <param id="0" name="Key">&quot;Score1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="678071029258822" type="Storage">
+                    <param id="0" name="Key">&quot;Score1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="607532730546315">
+            <conditions>
+                <condition id="1" name="On item get" sid="361948592715225" type="Storage">
+                    <param id="0" name="Key">&quot;Score1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="201785070765693" type="Score01">
+                    <param id="0" name="Text">Storage.ItemValue</param>
+                </action>
+                <action id="-9" name="Set value" sid="522901418576692" type="System">
+                    <param id="0" name="Variable">Score1</param>
+                    <param id="1" name="Value">Storage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="246324090060819">
+            <conditions>
+                <condition id="9" name="On item exists" sid="514707831385810" type="Storage">
+                    <param id="0" name="Key">&quot;Score2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="805803647793666" type="Storage">
+                    <param id="0" name="Key">&quot;Score2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="170493927151937">
+            <conditions>
+                <condition id="1" name="On item get" sid="193513227579957" type="Storage">
+                    <param id="0" name="Key">&quot;Score2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="165616440364340" type="Score02">
+                    <param id="0" name="Text">Storage.ItemValue</param>
+                </action>
+                <action id="-9" name="Set value" sid="351908498268184" type="System">
+                    <param id="0" name="Variable">Score2</param>
+                    <param id="1" name="Value">Storage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586684147946999">
+            <conditions>
+                <condition id="9" name="On item exists" sid="794129544669175" type="Storage">
+                    <param id="0" name="Key">&quot;Score3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="730997360632689" type="Storage">
+                    <param id="0" name="Key">&quot;Score3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="593511911178722">
+            <conditions>
+                <condition id="1" name="On item get" sid="695595325404851" type="Storage">
+                    <param id="0" name="Key">&quot;Score3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="112483757975942" type="Score03">
+                    <param id="0" name="Text">Storage.ItemValue</param>
+                </action>
+                <action id="-9" name="Set value" sid="346796723321109" type="System">
+                    <param id="0" name="Variable">Score3</param>
+                    <param id="1" name="Value">Storage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="128442609578664">
+            <conditions>
+                <condition id="9" name="On item exists" sid="722829178430613" type="Storage">
+                    <param id="0" name="Key">&quot;Score4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="630917565551277" type="Storage">
+                    <param id="0" name="Key">&quot;Score4&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="948494105984805">
+            <conditions>
+                <condition id="1" name="On item get" sid="781974085229758" type="Storage">
+                    <param id="0" name="Key">&quot;Score4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="234275999288504" type="Score04">
+                    <param id="0" name="Text">Storage.ItemValue</param>
+                </action>
+                <action id="-9" name="Set value" sid="264643665187399" type="System">
+                    <param id="0" name="Variable">Score4</param>
+                    <param id="1" name="Value">Storage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="377597779563311">
+            <conditions>
+                <condition id="9" name="On item exists" sid="670644006361271" type="Storage">
+                    <param id="0" name="Key">&quot;Score5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="931700115301381" type="Storage">
+                    <param id="0" name="Key">&quot;Score5&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="654990870643486">
+            <conditions>
+                <condition id="1" name="On item get" sid="970195786349599" type="Storage">
+                    <param id="0" name="Key">&quot;Score5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="213107827353238" type="Score05">
+                    <param id="0" name="Text">Storage.ItemValue</param>
+                </action>
+                <action id="-9" name="Set value" sid="307860958826583" type="System">
+                    <param id="0" name="Variable">Score5</param>
+                    <param id="1" name="Value">Storage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

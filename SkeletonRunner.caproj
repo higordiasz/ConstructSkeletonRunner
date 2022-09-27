@@ -149,6 +149,25 @@
         <object-type name="Score" sid="942181919939980">
             <plugin id="Text" />
         </object-type>
+        <object-type name="ScoreTable" sid="570666139501986">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\1.Programacao\5.Construct\SkeletonRunner_Images\Quadrado.png" />
+        </object-type>
+        <object-type name="Score01" sid="375877729851573">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score02" sid="672130523842630">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score03" sid="420902577687011">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score04" sid="258980674983974">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score05" sid="656196073847774">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

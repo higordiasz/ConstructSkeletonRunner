@@ -389,5 +389,584 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="951409623825983">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="987295174839511" type="Player">
+                    <param id="0" name="Object">Object01</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="908088164809684" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="400543343482305">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="444007247517189" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="296637128594691" type="Storage">
+                            <param id="0" name="Key">&quot;Score1&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="526020264460794" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="345480683713211" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="302780793784948" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="471949370206742" type="System">
+                            <param id="0" name="Variable">Score2</param>
+                            <param id="1" name="Value">Score1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="124441895626492" type="System">
+                            <param id="0" name="Variable">Score1</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="121866094996587" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="364412060500840" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="0" name="Set item" sid="894393517828539" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="0" name="Set item" sid="890444837341660" type="Storage">
+                            <param id="0" name="Key">&quot;Score2&quot;</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="396218900324518">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="106128965205452" type="System" />
+                        <condition id="-14" name="Compare variable" sid="176761772747512" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="183387435169735" type="Storage">
+                            <param id="0" name="Key">&quot;Score2&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="858350415956601" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="221217191452099" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="140066324272283" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="364422254534764" type="System">
+                            <param id="0" name="Variable">Score2</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="508196062901077" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="830072225932733" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="0" name="Set item" sid="837340227587517" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="887447625375017">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="373573625918142" type="System" />
+                        <condition id="-14" name="Compare variable" sid="911981055539357" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="972924563165306" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="657220165241097" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="543037592914707" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="705167500103965" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="782642091409735" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="290156835573339" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="453050720302422">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="685470701402239" type="System" />
+                        <condition id="-14" name="Compare variable" sid="513539616238054" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="908053578722108" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="163422323671480" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="708311804052702" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="489294903261787" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="279856651491390">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="438696787097186" type="System" />
+                        <condition id="-14" name="Compare variable" sid="545818221153671" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="586959912092969" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="615297128188007" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="240380839052330">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="988544263680840" type="Player">
+                    <param id="0" name="Object">Object02</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="989143658671464" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="634185674865513">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="379181322940050" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="510105842714161" type="Storage">
+                            <param id="0" name="Key">&quot;Score1&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="299223769640857" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="157887967785649" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="411207157461919" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="597988411670408" type="System">
+                            <param id="0" name="Variable">Score2</param>
+                            <param id="1" name="Value">Score1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="237395792323835" type="System">
+                            <param id="0" name="Variable">Score1</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="734965750162573" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="773046192474046" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="0" name="Set item" sid="651373200166499" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="0" name="Set item" sid="754176546799164" type="Storage">
+                            <param id="0" name="Key">&quot;Score2&quot;</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="519933360637105">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="289663329939468" type="System" />
+                        <condition id="-14" name="Compare variable" sid="889417290733544" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="576507647864871" type="Storage">
+                            <param id="0" name="Key">&quot;Score2&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="260481131083942" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="322810170552602" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="932848013023977" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="673464862087969" type="System">
+                            <param id="0" name="Variable">Score2</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="757618044299558" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="665615771701325" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="0" name="Set item" sid="383091573084874" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="204912946624631">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="624528228704708" type="System" />
+                        <condition id="-14" name="Compare variable" sid="214209097166270" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="672091835445546" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="621917513280694" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="166142096800531" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="787941888862857" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="562960754414658" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="390056291473921" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119178451609756">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="569851948096153" type="System" />
+                        <condition id="-14" name="Compare variable" sid="307895081104721" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="199030353109965" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="205406004985709" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="839589342398620" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="784316011148457" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="289359666791524">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="966425255724265" type="System" />
+                        <condition id="-14" name="Compare variable" sid="424800356044171" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="643754888182840" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="171911028906330" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="362427553854389">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="669597528915067" type="Player">
+                    <param id="0" name="Object">Object03</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="620502742623161" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="377520872150083">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="439405089970116" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="490396843727254" type="Storage">
+                            <param id="0" name="Key">&quot;Score1&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="577573529660446" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="801776577206565" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="238650361296804" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="776970474025825" type="System">
+                            <param id="0" name="Variable">Score2</param>
+                            <param id="1" name="Value">Score1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="962348522974226" type="System">
+                            <param id="0" name="Variable">Score1</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="949785795754776" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="948530786992559" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="0" name="Set item" sid="176598730754149" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="0" name="Set item" sid="278463528788812" type="Storage">
+                            <param id="0" name="Key">&quot;Score2&quot;</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="620352056804754">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="963945355996520" type="System" />
+                        <condition id="-14" name="Compare variable" sid="950235145546017" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="187873570128699" type="Storage">
+                            <param id="0" name="Key">&quot;Score2&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="212130565442191" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="648608770978855" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="707652777384544" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="483804064122018" type="System">
+                            <param id="0" name="Variable">Score2</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="151058128653162" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="977963035396197" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="0" name="Set item" sid="393130146145219" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="961478783130588">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="139621328420988" type="System" />
+                        <condition id="-14" name="Compare variable" sid="936698385566049" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="409990231688961" type="Storage">
+                            <param id="0" name="Key">&quot;Score3&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="319976673384792" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="959400985541133" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="688655117007027" type="System">
+                            <param id="0" name="Variable">Score3</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="588582676053286" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                        <action id="0" name="Set item" sid="625853541277921" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="136740944848585">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="427660580426920" type="System" />
+                        <condition id="-14" name="Compare variable" sid="419499316675570" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="180690486417086" type="Storage">
+                            <param id="0" name="Key">&quot;Score4&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="842364919163698" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="978905333159816" type="System">
+                            <param id="0" name="Variable">Score4</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="717981231602959" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="627287892774785">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="256874711409427" type="System" />
+                        <condition id="-14" name="Compare variable" sid="208429207987471" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Score5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="261930467451708" type="Storage">
+                            <param id="0" name="Key">&quot;Score5&quot;</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="557993209386361" type="System">
+                            <param id="0" name="Variable">Score5</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
